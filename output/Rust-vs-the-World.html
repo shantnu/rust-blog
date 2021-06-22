@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <link rel="stylesheet" href="static/css/codehilite.css"/>
+            <link rel="stylesheet" href="static/css/typesafe.css">
+                <title>Rust vs the World: Or Why is Rust so Darn Hard to Learn</title>
+        </head>
+        <body>
+
+                <p></p>
+<h1>Rust vs the World: Or Why is Rust so Darn Hard to Learn</h1>
+<p>For many years, I fought learning Rust, seeing it as yet another Over-Hyped-Language(TM). A language favoured by the Hipster Bro-gramming dudes who were out to Stick it to Da Man. And so for a long time, I avoided learning this hippy language everyone wouldn't shut up about.</p>
+<p>Yet when I tried it, it was a ...refreshing change. Like every Bollywood director says about their movie, it is different and unique.</p>
+<p>So is learning Rust worth it? To answer this question, I could give you a list of pros and cons and lots of blah blah blah about Rust's low level features, which is what most everyone does; but I thought it would be better to compare Rust to a few other languages out there. Specifcially:</p>
+<ul>
+<li>C -- I started out in embedded developement (though it was some time ago).</li>
+<li>Python has been my bread and butter for the last 9-10 years or so</li>
+<li>Javascript-- I've been trying to learn JS for years, and failing, for the same reason most people fail at Rust. Yes, JS === Rust! (I will explain why below)</li>
+</ul>
+<p>So by comparing Rust to C, Python and Javascript, I hope to show you where Rust shines, and why its so gosh darn hard to learn.</p>
+<p>(</p>
+<p><em>I'm using some poorly drawn comics in this article, in a desperate attempt to be funny and likeable. I got the idea from <a href="https://jvns.ca/">Julia Evans</a>.</em></p>
+<p><em>If you hate the comics, please send me a message I and I will take them down. <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Click here</a> to contact me, I appreicate honest feedback.</em></p>
+<p>)</p>
+<h2>Rust is strict. Like crazy strict</h2>
+<p>Imagine 3 people: Littly Johnny Python, Dude-Bro C, and Mummy Rust.</p>
+<p>All 3 want to go for a walk.</p>
+<p><strong>Little Python</strong></p>
+<p><img alt="" src="static/images/py1-2.jpg" /></p>
+<p>Little Python is the one pogo-sticking for fun. Python mommy is cool with it, as long as he stays away from the minefields.</p>
+<p>Then we have this guy:</p>
+<p><strong>C Dude Bro</strong></p>
+<p>Permanently stoned, this dude bro don't respect no authority.</p>
+<p><img alt="c1" src="static/images/c1-2.jpg" /></p>
+<p>He knows he's cool. Will race his car around the block at 200MPH, while mooning the cops, while drinking rum. Hey, he's done it a 100 times without any harm so far!</p>
+<p><img alt="c2" src="static/images/c2-2.jpg" /></p>
+<p>C lets you do whatever you want, no one cares.</p>
+<p>Until it call comes crashing down on you. But hey, you're the one who wanted to stick it to Da Man!</p>
+<p>And finally, we have out Hero:</p>
+<p><strong>Rust</strong></p>
+<p><img alt="rust1" src="static/images/rust1-2.jpg" /></p>
+<p>Rust Mommy is STRICT. She won't let little Rusty go out for a walk without aeroplane insurance, <strong>just in case a plane crashes on him while he's out walking</strong>.</p>
+<p>And that's Rust's biggest strength, and weakness-- it is super strict. Anything that can go wrong, WILL go wrong (don't look at me, Rust mommy said so).</p>
+<p>You want to do something simple, like open a goddamn file and read it?</p>
+<p>The file open can fail, so you have to cope for it.</p>
+<p>The file is opened? The read can fail, you have to cope with it.</p>
+<p>You read the file? Well, it could be in a strange format Rust can't recognise. COPE WITH IT!</p>
+<p>For Rust mommy, <strong>anything that can go wrong, will go wrong</strong></p>
+<p>And yes, in Python you can do try catchs, (as in other languages), but you can skip them if you're in a hurry.</p>
+<p>Not in Rust.</p>
+<p>EVERY error must be handled, or the compiler will stop you. My first Rust program, to read a few lines from a file, took me a few hours and a lot of tears.</p>
+<h2>Tutorials and learning resources</h2>
+<p>Let's come  to Javascript for a moment. You know, this kid:</p>
+<p><img alt="js1" src="static/images/js1-2.jpg" /></p>
+<p>You could literally put your booger (you know, the disgusting thing that comes out of your nose) on a tissue, create a npm package out of it and get a million downloads in 3 days.</p>
+<p>Next you know, Google is using your <em>booger-nuclear-js</em> library, and the whole internet is down when you sneeze. Bless you.</p>
+<p>I've been trying to learn Javascript for a long time, but keep quitting. Because I learnt, JS has the <strong>exact</strong> same problem Rust has:</p>
+<p><em>Please read the below in Darth Vader's voice</em></p>
+<blockquote>
+<p>Both the languages tutorials expect you to read the language specs, every single goddamn feature and specification, and then figure out what to do with it</p>
+</blockquote>
+<p>I dont know why, but expect for 1-2 notable exceptions, EVERY Js tutorial, book, course, paid or free, starts with: <em>Here are the 9 million commands JS supports, we will now start at page 0 and go from there.</em></p>
+<p>And Rust does the same. It's all <em>Read the Rust book, blah blah blah</em></p>
+<p>The reason I struggled with JS: I've got 15 years experience professionally, 25 if you count when I actually started programming as a teenager. I <strong>know</strong> what a for loop is. Why can't I learn something practical?</p>
+<p>Rust suffers from the same problem, the <em>Read the specs and figure out what to do with it</em></p>
+<p>This is one of my pains, and one of the reasons I started this site: To fix this, to actually build somethign useful.</p>
+<p>Python rules in this arena-- awesome turorials, lots of practical stuff you can build, everything from games to video processing to mahcine learning.</p>
+<p>But back to Rust. It does have a few good points.</p>
+<h2>Safety</h2>
+<p>By safety, I mean memory safety, protection from stack smashing etc.</p>
+<p><strong>Python</strong> - is ok, I guess.</p>
+<p><strong>C</strong>:</p>
+<p>Where do I start?</p>
+<p>Imagine a locked room murder mystery. Our victim, Mr Stack is lying dead on the floor. The detective comes in and asks, are there any suspects? Everyone looks at C. He's covered in blood, but insists it's ketchup.</p>
+<p><img alt="c3" src="static/images/py2.JPG" /></p>
+<p>And finally, we have Rust:</p>
+<p><img alt="" src="static/images/rust3.JPG" /></p>
+<p><img alt="" src="static/images/rust2.JPG" /></p>
+<p>Rust mommy will send in the 101st Ariborne division to protect little Rusty as he goes about his walky-walky.</p>
+<p>Rust is so strict, it won't even let you compile if it suspects there is a memory or race issue.</p>
+<p>In my limited experience, this leads to some unecessary complex and verbose code, but you get used to it.</p>
+<p>And you know your code won't randomly crash on midnight at Saturday.</p>
+<h2>Ecosystem and Distribution</h2>
+<p><strong>Javascript</strong>: Millions of "standard" libraries, and thousands more added every minute! At least running the code is easy, you put it an HTML file...</p>
+<p>.... no you don't, and no it isnt easy. You have to start a local server and shit(security?). Or spend hours figuring out npm, and why you need 20 versions of it, because each library only works on <strong>one and only one version</strong>.</p>
+<p>And one Genius library wanted me to install Python 2.7. Why do I need Python 2.7 to run a  goddamn JS library? <em>Use the same language on the front and backend</em> my ass.</p>
+<p><strong>Python</strong></p>
+<p>Python does have a good ecosystem for libraries. Distribution, on the otehr hand...</p>
+<p><em>There must be one and only one way to do something. Explicit is better than implicit</em></p>
+<p>--Zen of Python -- which hasn't been true for 10 years.</p>
+<p>Modern Python:</p>
+<p><img alt="" src="https://imgs.xkcd.com/comics/python_environment.png" /></p>
+<p>There are 20 ways to install Python and its libraries, a dozen ways to check for linting / type errors, code formatting etc. There are 5 ways to create isolated environments.</p>
+<p>And if you want to share your code with others, boy are in for some fun. Dozens of ways, all have their quirks, all can fail randomly.</p>
+<p><strong>Python is the ultimate <em>Runs on my machine</em> Language </strong></p>
+<p>(<a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Click here</a> to send me angry rants if you find the above statement offensive)</p>
+<p>Even Uncle Perl laughs at Python nowadays:</p>
+<p><img alt="" src="static/images/py3.JPG" /></p>
+<p><strong>C</strong></p>
+<p>Ecosystem: HAHAHAHAHAH</p>
+<p>Distribution: In theory, you can just compile your code.</p>
+<p>In practice- spend hours installing some weird library that hasnt been updated since 1985, but is a dependency for some reason. Find you can only install the library by adding a weird apt repo some guy maintains in his mom's basement.</p>
+<p><strong>Bonus</strong> Then take that shitty library and create a Python module on it, so Python programmers can cry with you.</p>
+<p><strong>Rust</strong></p>
+<p>Maybe because Rust is still new-ish, but boy, it's ecosystem and distribution is AWESOME.</p>
+<p><em>cargo</em> learnt from many of the problems of previous package managers. One tool to start a new project, format your code, check for errors and compile. And (like Go) can compile for any platform.</p>
+<p>Cargo is the reason I found Rust so easy to use. Unlike Javascript or even Python, it isnt something that has been bolted on and gone through a dozen hacks to please everyone and his grandma. No, Cargo is a part of Rust, and works great with it.</p>
+<p>You use Rust and Cargo, everything is so smooth-- it just works.</p>
+<p><img alt="rust4" src="static/images/rust4.JPG" /></p>
+<h2>tl;dr</h2>
+<p>Rust is Hard to learn:</p>
+<ul>
+<li>Hard because it is hard ,lots of new and weird concepts</li>
+<li>but also hard because how it is taught</li>
+</ul>
+<p>But Rust is also:</p>
+<ul>
+<li>safe</li>
+<li>fast</li>
+<li>easy to distribute</li>
+<li>Fix a lot of shitty problems of languages before it- especially in the package manager and distribution</li>
+</ul>
+<h2>Finally, I'm building a learn by projects rust series</h2>
+<p>One of the problems I mentioned was: Rust is taught by Read the Rust book, then figure out what to do</p>
+<p>I prefer to learn via practical examples, and am planning to write a series of tutorials on building practical projects in Rust. So far, have planned the Linux find and grep utilities, a simple shell, all in Rust.</p>
+<p>Later on, will add more projects, maybe ported from my book <a href="https://www.pythonforengineers.com/python-for-scientists-and-engineers/">Python for Engineers</a></p>
+<p>If this interests you, please sign up below to know when the first article will be out.</p>
+                <hr/>
+        </body>
+</html>

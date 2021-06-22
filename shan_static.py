@@ -3,6 +3,7 @@ import sys
 import re
 import jinja2
 import pdb
+import os
 
 filein = sys.argv[1]
 with open(filein, 'r') as f:
@@ -21,6 +22,8 @@ print(html2[:20])
 
 outfile = template.render(title = title, body=html2)
 
+outfile_name =  "output/" +  os.path.splitext(os.path.basename(filein))[0] + ".html"
+print(outfile_name)
 
-with open('outfile.html', 'w') as f:
+with open(outfile_name, 'w') as f:
     f.write(outfile)

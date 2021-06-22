@@ -50,7 +50,7 @@ All 3 want to go for a walk.
 
 **Little Python**
 
-![py1](static/images/py1.jpg)
+![](static/images/py1-2.jpg)
 
 
 
@@ -68,7 +68,7 @@ Then we have this guy:
 
 Permanently stoned, this dude bro don't respect no authority.
 
-![c1](static/images/c1.jpg)
+![c1](static/images/c1-2.jpg)
 
 
 
@@ -76,7 +76,7 @@ He knows he's cool. Will race his car around the block at 200MPH, while mooning 
 
 
 
-![c2](static/images/c2.jpg)
+![c2](static/images/c2-2.jpg)
 
 
 
@@ -96,7 +96,7 @@ And finally, we have out Hero:
 
 **Rust**
 
-![rust1](static/images/rust1.jpg)
+![rust1](static/images/rust1-2.jpg)
 
 
 
@@ -144,7 +144,7 @@ Let's come  to Javascript for a moment. You know, this kid:
 
 
 
-![js1](static/images/js1.jpg)
+![js1](static/images/js1-2.jpg)
 
 You could literally put your booger (you know, the disgusting thing that comes out of your nose) on a tissue, create a npm package out of it and get a million downloads in 3 days.
 
